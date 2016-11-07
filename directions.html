@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- email alamarcpsc@gmail.com for any questions -->
+  <title>ForFeet</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="For Feet Podiatric Care">
+  <meta name="keywords" content="ForFeet,Colleen,Kenney">
+  <meta name="author" content="Adam La Mar">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwUA1by4EaQn82WcesdwdSmxwLVUmGGDA&callback=initMap"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  .navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .affix + .container-fluid { padding-top: 50px; }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid" style="background-color:#9d9d9d;color:#222;height:75px;">
+<div class="row">
+  <div class="col-xs-2" align="center">
+    <img src="footprint.png" alt="foorprint" height="75">
+  </div>
+  <div class="col-xs-10" align="right">
+    <h5 style="line-height:55px;">East Bay Podiatry Associates</h5>
+  </div>
+</div>
+</div>
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="75">
+<div class="container-fluid">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="nav navbar-nav">
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li class="active"><a href="directions.html">Directions</a></li>
+  </ul>
+</div>
+</div>
+</nav>
+
+<div class="container-fluid" style="margin-top:-20px;">
+  <div class="page-header" align="center">
+    <h3>Office Directions</h3>
+  </div>
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-7">
+    <h3 style="color:#2874A6;">Location</h3>
+    <h4 style="line-height:50px;">
+    Our small office can be difficult to find. Hopefully the instructions on this page will make reaching our clinic all the easier.
+    </h4>
+  </div>
+  <div class="col-sm-4" align="center" style="margin-bottom:20px;">
+    <span class="glyphicon glyphicon-globe" style="font-size:200px;"></span>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid" style="background-color:#f6f6f6;padding-bottom:10px;">
+<div class="row" style="margin-bottom:20px;">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-8">
+    <h3 style="color:#2874A6;">Address</h3>
+    <h4>
+    2485 High School Ave Ste 222 Concord, CA 94520<br>We're across the street from the John Muir Medical Center.
+    </h4>
+    <h3 style="color:#2874A6;">Parking Garage</h3>
+    <h4>
+    There is a parking garage underneath our building that is available to all visitors.
+    </h4>
+    <h3 style="color:#2874A6;">East Elevator</h3>
+    <h4>
+    Our office is located in the eastern wing of the building. To get to our office you can either take the east elevator located in the parking garage or the stairs.
+    </h4>
+    <h3 style="color:#2874A6;">2nd Floor Suite 222</h3>
+    <h4>
+    If you took the eastern elevator to the second floor then our office door should be right in front of you. If you took the stairs then we are just down the hall located in suite 222.
+    </h4>
+  </div>
+  <div class="col-sm-3"></div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8" align="center">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="garage.jpg" alt="Garage" width="640" height="480">
+        <div class="carousel-caption">
+          <p>Take the east elevator under the garage.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="door.jpg" alt="Door" width="640" height="480">
+        <div class="carousel-caption">
+          <p>Our office is located on the second floor.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="office.jpg" alt="Office" width="640" height="480">
+        <div class="carousel-caption">
+          <p>Sign in at our front desk and we'll get to you shortly!</p>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+  <div class="col-sm-2"></div>
+</div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<footer align="center" style="background-color:#222;border-color:#080808;color:#9d9d9d;padding:10px;">
+  <h3>Board Certified Doctors</h3>
+  <p>by the American Board of Podiatric Medicine</p>
+  <p>by the American Board of Wound Management</p>
+  <p>by the American Board of Foot and Ankle Surgery</p>
+</footer>
+
+<script>
+var myLatLng = {lat: 37.985516, lng: -122.033754};
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('googleMap'), {
+    center: myLatLng,
+    zoom: 15,
+    disableDefaultUI: true,
+    zoomControl: true,
+    scrollwheel:false,
+    draggable:false
+  });
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map
+  });
+}
+</script>
+
+</body>
+</html>
